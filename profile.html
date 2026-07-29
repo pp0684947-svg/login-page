@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile — LearnHub</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="site.js" defer></script>
+  <script src="auth.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+
+    <header class="site-header">
+      <a class="brand" href="index.html">LearnHub</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="signin.html">Sign In</a>
+        <a href="register.html">Register</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </header>
+
+    <main class="container profile-page">
+      <section class="profile-summary profile-card">
+        <div class="profile-header">
+          <div>
+            <span class="eyebrow">Student profile</span>
+            <h1>Alex Johnson</h1>
+            <p class="profile-role">Full-stack learner • Active student since 2025</p>
+          </div>
+          <div class="avatar-stack">
+            <div class="avatar">AJ</div>
+          </div>
+          <div class="profile-actions">
+            <button class="secondary-button signout-button" type="button">Sign Out</button>
+          </div>
+        </div>
+
+        <div class="profile-overview">
+          <div class="profile-detail">
+            <span>Email</span>
+            <strong>alex.johnson@email.com</strong>
+          </div>
+          <div class="profile-detail">
+            <span>Current track</span>
+            <strong>Web Development</strong>
+          </div>
+          <div class="profile-detail">
+            <span>Status</span>
+            <strong class="badge">Verified learner</strong>
+          </div>
+        </div>
+
+        <div class="progress-section">
+          <div class="progress-title">
+            <h2>Course progress</h2>
+            <span>72% complete</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 72%;"></div>
+          </div>
+          <p class="progress-note">Keep up the pace to finish your current learning path this month.</p>
+        </div>
+      </section>
+
+      <section class="detail-grid">
+        <article class="profile-card">
+          <h2>Active course</h2>
+          <p class="detail-copy">Modern responsive websites with HTML, CSS, and JavaScript.</p>
+          <ul class="profile-bullets">
+            <li>Lessons completed: 18 of 25</li>
+            <li>Next lesson: Responsive layout</li>
+            <li>Estimated finish: 4 days</li>
+          </ul>
+          <button class="secondary-button" type="button" data-action="index.html">Continue course</button>
+        </article>
+
+        <article class="profile-card">
+          <h2>Achievements</h2>
+          <div class="achievement-list">
+            <span class="badge badge-small">Course milestone</span>
+            <span class="badge badge-small">Weekly streak</span>
+            <span class="badge badge-small">Certificate ready</span>
+          </div>
+          <p class="detail-copy">You have a completion certificate available when you finish the course.</p>
+          <button class="secondary-button" type="button" data-action="certificate.html">Download certificate</button>
+        </article>
+      </section>
+
+      <section class="recommended-grid">
+        <h2>Recommended next</h2>
+        <div class="course-grid course-grid-compact">
+          <article class="course-card">
+            <h3>Advanced JavaScript</h3>
+            <p>Deepen your code skills with real-world scripting patterns.</p>
+          </article>
+          <article class="course-card">
+            <h3>UI Design Toolkit</h3>
+            <p>Learn layout systems, typography, and interactive design.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 LearnHub — your progress dashboard is ready.</p>
+    </footer>
+  </div>
+</body>
+</html>
