@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In — LearnHub</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="site.js" defer></script>
+  <script src="auth.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">LearnHub</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="signin.html">Sign In</a>
+        <a href="register.html">Register</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </header>
+
+    <main class="container auth-page">
+      <section class="auth-card">
+        <span class="eyebrow">Access your account</span>
+        <h1>Welcome back</h1>
+        <p class="auth-note">Sign in to continue your learning journey and access your profile.</p>
+
+        <form class="auth-form signin-form">
+          <div class="auth-field">
+            <label for="signin-email">Email</label>
+            <input id="signin-email" type="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="auth-field">
+            <label for="signin-password">Password</label>
+            <input id="signin-password" type="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <button class="primary-button" type="submit">Sign In</button>
+          <p class="form-footer">New to LearnHub? <a class="text-link" href="register.html">Create an account</a></p>
+          <p class="message" id="signin-message"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 LearnHub — secure sign in for modern learners.</p>
+    </footer>
+  </div>
+</body>
+</html>

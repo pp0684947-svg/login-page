@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub — Student Learning Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="site.js" defer></script>
+  <script src="auth.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">LearnHub</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="signin.html">Sign In</a>
+        <a href="register.html">Register</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </header>
+
+    <main class="container home-page">
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <span class="eyebrow">A better way to learn</span>
+          <h1>Student courses, progress tracking, and certificates in one place.</h1>
+          <p>Jump into curated learning paths, monitor your progress, and earn certificates to share with your peers.</p>
+          <div class="hero-actions">
+            <button class="primary-button" type="button" data-action="signin.html">Sign In</button>
+            <button class="secondary-button" type="button" data-action="register.html">Register</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Student learning dashboard" />
+        </div>
+      </section>
+
+      <section class="feature-section">
+        <article class="feature-card accent-card">
+          <h3>Guided learning</h3>
+          <p>Structured student paths keep learning clear and focused.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Certificates</h3>
+          <p>Complete courses and generate shareable certificates instantly.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Mentor guidance</h3>
+          <p>Get expert feedback and curated next steps for every lesson.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Progress analytics</h3>
+          <p>Visualize your achievements and stay motivated every week.</p>
+        </article>
+      </section>
+
+      <section class="course-preview">
+        <div class="section-head">
+          <h2>Popular courses</h2>
+          <button class="text-button" type="button" data-action="signin.html">Start learning</button>
+        </div>
+        <div class="course-grid">
+          <article class="course-card">
+            <img class="course-icon" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Web Development icon">
+            <h3>Web Development</h3>
+            <p>Build modern websites with HTML, CSS, and JavaScript.</p>
+          </article>
+          <article class="course-card">
+            <img class="course-icon" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80" alt="Design and UX icon">
+            <h3>Design & UX</h3>
+            <p>Create polished interfaces and learn user-centered design.</p>
+          </article>
+          <article class="course-card">
+            <img class="course-icon" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80" alt="AI Productivity icon">
+            <h3>AI Productivity</h3>
+            <p>Use AI tools to accelerate your learning and workflow.</p>
+          </article>
+          <article class="course-card">
+            <img class="course-icon" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80" alt="Data Science icon">
+            <h3>Data Science</h3>
+            <p>Analyze real data with Python and build powerful dashboards.</p>
+          </article>
+          <article class="course-card">
+            <img class="course-icon" src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=400&q=80" alt="Cloud Engineering icon">
+            <h3>Cloud Engineering</h3>
+            <p>Deploy scalable apps and infrastructure on cloud platforms.</p>
+          </article>
+          <article class="course-card">
+            <img class="course-icon" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Cybersecurity icon">
+            <h3>Cybersecurity</h3>
+            <p>Protect systems with threat analysis and defensive design.</p>
+          </article>
+          <article class="course-card">
+            <img class="course-icon" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=80" alt="Mobile App Development icon">
+            <h3>Mobile App Dev</h3>
+            <p>Build mobile-first experiences for iOS and Android.</p>
+          </article>
+          <article class="course-card">
+            <img class="course-icon" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Product Management icon">
+            <h3>Product Management</h3>
+            <p>Learn roadmap planning, agile delivery, and stakeholder alignment.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 LearnHub — smart student learning made attractive.</p>
+    </footer>
+  </div>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAAgEkpk0LUUGdvLB-UeA-gDvd3QsaJaEI",
+    authDomain: "student-management-9c9be.firebaseapp.com",
+    projectId: "student-management-9c9be",
+    storageBucket: "student-management-9c9be.firebasestorage.app",
+    messagingSenderId: "450574684910",
+    appId: "1:450574684910:web:6196fcfbba6aaae0ce99ff",
+    measurementId: "G-CFCCCE26V2"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
+firebase login
